@@ -58,7 +58,7 @@ function displayArticle(articleId) {
 
     const authorParagraph = document.createElement("p");
     authorParagraph.classList.add("author");
-    authorParagraph.innerHTML = `Автор: <a href="../author/name?=${article.authorlink}">${article.author}</a>`;
+    authorParagraph.innerHTML = `Автор: <a href="../author/${article.authorlink}">${article.author}</a>`;
 
     const dataParagraph = document.createElement("p");
     dataParagraph.classList.add("data");
@@ -194,8 +194,8 @@ shareContainer.addEventListener('click', function(event) {
 
 document.addEventListener("DOMContentLoaded", function () {
   const urlParams = new URLSearchParams(window.location.search);
-  let queryString = urlParams.toString(); // Преобразовываем параметры запроса в строку
-  queryString = queryString.replace("=", ""); // Удаляем знак равно
+  let queryString = urlParams.toString(); 
+  queryString = queryString.replace("=", "");
 
   const articleId = parseInt(queryString);
   displayArticle(articleId);

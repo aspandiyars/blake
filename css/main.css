@@ -285,7 +285,7 @@ display: block;
 width: 100%;
 height: 1px;
 background-color: rgb(0, 0, 0, 0.219);
-margin-top: 10px;
+margin-top: 15px;
 margin-bottom: 15px;
 }
 .container-p .image-between-paragraphs {
@@ -973,22 +973,22 @@ border-radius: 2px;
 width: 1170px;
 }
 .container-p .author-photo {
-    width: 300px;
-    height: auto;
-    border: 1px solid rgba(0, 0, 0, 0.395);
-    }
-    .container-p p.text-author {
-    margin-bottom: -400px;
-    margin-left: 20px;
-    font-size: 35px;
-    margin-top: 190px;
-    }
-    .container-p p.title-author {
-    font-size: 60px;
-    margin-top: -250px;
-    font-family: 'Source Serif 4', serif;
-    margin-left: 330px;
-    }
+width: 300px;
+height: auto;
+border: 1px solid rgba(0, 0, 0, 0.395);
+}
+.container-p p.text-author {
+margin-bottom: -400px;
+margin-left: 20px;
+font-size: 35px;
+margin-top: 190px;
+}
+.container-p p.title-author {
+font-size: 60px;
+margin-top: -250px;
+font-family: 'Source Serif 4', serif;
+margin-left: 330px;
+}
 .container-p .image1 {
 margin-top: 10px;
 margin-left: -20px;

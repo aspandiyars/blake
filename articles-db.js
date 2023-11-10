@@ -194,8 +194,8 @@ shareContainer.addEventListener('click', function(event) {
 
 function createDynamicURL(id) {
   const url = new URL(window.location.href);
-  url.searchParams.set('id', id);
-  const pathname = url.pathname.replace(/\/a\.html$/, '/');
+  url.searchParams.set('', id);
+  const pathname = url.pathname.replace(/a.html/, '/');
   url.pathname = pathname;
   history.pushState({}, '', url.href);
   console.log('Updated URL:', url.href);

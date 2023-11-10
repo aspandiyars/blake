@@ -192,15 +192,6 @@ shareContainer.addEventListener('click', function(event) {
     containerP.appendChild(articleElement);
 }
 
-function createDynamicURL(id) {
-  const url = new URL(window.location.href);
-  url.searchParams.set('', id);
-  const pathname = url.pathname.replace(/a.html/, '/');
-  url.pathname = pathname;
-  history.pushState({}, '', url.href);
-  console.log('Updated URL:', url.href);
-}
-
 
 document.addEventListener("DOMContentLoaded", function () {
   const urlParams = new URLSearchParams(window.location.search);
@@ -209,12 +200,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const articleId = parseInt(queryString);
   displayArticle(articleId);
-
-  createDynamicURL(articleId);
 });
-
-
-
 
 // next article // 
 
